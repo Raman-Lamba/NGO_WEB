@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Razorpay Payment Example</title>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <link rel="stylesheet" href="donatec.css" />
+  </head>
+  <body>
+    <div class="main-content">
+        <header class="header">
+          <div class="logo">
+            <img src="resources/logo.png" alt="CRY Logo" />
+          </div>
+          <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <div class="dropdown">
+              <a href="#" class="nav-link dropbtn"
+                >Who are we? <i class="fas fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">Our Story</a>
+                <a href="#">Our Team</a>
+                <a href="#">Testimonials</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="nav-link dropbtn"
+                >What we do? <i class="fas fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">Services</a>
+                <a href="#">Projects</a>
+                <a href="#">Impact</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="nav-link dropbtn"
+                >Get Involved <i class="fas fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">Volunteer</a>
+                <a href="#">Donate</a>
+                <a href="#">Join Us</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="nav-link dropbtn"
+                >Resources <i class="fas fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">Blog</a>
+                <a href="#">Guides</a>
+                <a href="#">FAQs</a>
+              </div>
+            </div>
+          </nav>
+          <button class="donate-button">
+            <a href="donate.html">❤️ Donate Now</a>
+          </button>
+        </header>
+  
+    <h1>They need you...</h1>
+    <div class="main_content">
+      <div class="text">
+        <h3>Why do it?</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquid
+          aspernatur numquam dolore. Itaque veniam nihil adipisci esse atque
+          molestias ipsa voluptas? Rem, est? Consectetur alias ut suscipit quos
+          laborum? Lorem ipsum dolor sit
+        </p>
+        <h3>How will it help?</h3>
+        <p>
+          amet consectetur adipisicing elit. Unde nemo officiis ipsa itaque
+          impedit omnis eos, labore quis quod harum voluptatem odit eveniet
+          esse, a obcaecati eligendi aut libero maiores. Lorem, ipsum dolor sit
+          amet consectetur adipisicing elit. Magnam voluptatem architecto amet
+          tempora inventore reiciendis quisquam vitae consequatur voluptatibus
+          corporis, eaque vel sed deleniti repellat provident ipsam corrupti
+          alias sapiente.
+        </p>
+      </div>
+      <div class="formi">
+        <form id="payment-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required class="input" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="input"
+            />
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact Number:</label>
+            <input
+              type="tel"
+              id="contact"
+              name="contact"
+              required
+              class="input"
+            />
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount (in INR):</label>
+            <input
+              type="number"
+              id="amount"
+              name="amount"
+              required
+              class="input"
+            />
+          </div>
+          <button type="submit" id="pay-button" class="submit-btn">
+            Donate
+          </button>
+        </form>
+        <div id="payment-id-display"></div>
+      </div>
+    </div>
+    <script type="module" src="donates.js"></script>
+  </body>
+</html>
